@@ -26,7 +26,7 @@
                </td>
                <td>My Picks   <h3>Week: <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label></h3>
                    
-                   <%--<table id="tw1" runat="server"></table>--%>
+                   <table id="tw1" runat="server"></table>
                    <asp:GridView ID="GridView2" runat="server"></asp:GridView>
 
                </td>
