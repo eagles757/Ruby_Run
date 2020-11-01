@@ -4,11 +4,18 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <title>Eagle Pics</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <form id="form1" runat="server">
-       <table><tr><td>Ruby Run</td></tr>
+       <table style="width:100%"><tr><td>Ruby Run</td></tr>
            <tr>
                <td>User: <asp:Label ID="Label9" runat="server" Text="Label"></asp:Label>               </td>
                <td>LifeTime Stats: <asp:Label ID="Label10" runat="server" Text="Label"></asp:Label></td>
@@ -20,17 +27,18 @@
 
            </tr>
            <tr>
-               <td>
+               <td style="vertical-align:top;text-align:center">
                    Last Weeks Results
-                   <table id="lastweek" runat="server"></table>
+                   <table id="lastweek" runat="server" style="width:80%"></table>
                </td>
-               <td>My Picks   <h3>Week: <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label></h3>
+               <td style="vertical-align:top">My Picks   <h3>Week: <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label></h3>
                    
-                   <table id="tw1" runat="server"></table>
-                   <asp:GridView ID="GridView2" runat="server"></asp:GridView>
+                   <table id="tw1" runat="server" style="width:80%"></table>
+                 <%--  <asp:GridView ID="GridView2" runat="server"></asp:GridView>--%>
+                   <asp:Button ID="Button1" runat="server" Text="Save" OnClick="Button1_Click" />
 
                </td>
-               <td>Place in my tear</td>
+               <td style="vertical-align:top;text-align:center">Place in my tear</td>
            </tr>
        </table>
 

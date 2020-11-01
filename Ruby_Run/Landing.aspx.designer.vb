@@ -68,13 +68,13 @@ Partial Public Class Landing
     Protected WithEvents tw1 As Global.System.Web.UI.HtmlControls.HtmlTable
 
     '''<summary>
-    '''GridView2 control.
+    '''Button1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents GridView2 As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Label1 control.
